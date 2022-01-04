@@ -1,11 +1,16 @@
 .header {
-  height: 70px;
+  height: 100px;
   display: flex;
   align-items: center;
   background-color: #e0374e;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.header__image {
+  height: 100px;
+  padding-right: 10px;
 }
 
 .header_name {
@@ -15,6 +20,7 @@
   margin: 18px;
   font-size: x-large;
   color: white;
+  border-bottom: none;
 }
 
 .header_searchIcon {
@@ -56,13 +62,14 @@
   font-weight: 800;
 }
 
-.header_optionBasket{
-    display: flex;
-    align-items: center;
-    color: white;
+.header_optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
 }
 
-.header_basketCount{
+.header_basketCount {
   margin-left: 10px;
   margin-right: 10px;
+ 
 }
