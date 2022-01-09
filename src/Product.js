@@ -6,8 +6,6 @@ function Product({id, title,image,price,rating}) {
 
     const [{basket},dispatch] = useStateValue();
 
-    console.log('this is the basket >>', basket)
-
     const addToBasket = () =>{
         dispatch({
             type: 'ADD_TO_BASKET',
@@ -31,7 +29,7 @@ function Product({id, title,image,price,rating}) {
                 </p>
                 <div className='product__rating'>
                     {Array(rating).fill().map((_,i)=>(
-                        <p>⭐</p>
+                        <span role="img" aria-label="start">⭐</span>
                     ))}
                     
                      
